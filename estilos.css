@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #007bff;
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.navbar {
+    background-color: #343a40 !important;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffbc00 !important;
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffbc00;
+    transition: transform 0.3s ease;
+}
+
+.card-title:hover {
+    transform: scale(1.05);
+}
+
+.card-text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.card-text:hover {
+    color: #fff;
+}
+
+.card {
+    background-color: #007bff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.text-muted {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+iframe {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+iframe:hover {
+    transform: scale(1.05);
+}
+
+h5 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #ffbc00;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.col-lg-4 {
+    flex: 0 0 32%;
+}
+
+.col-lg-8 {
+    flex: 0 0 66%;
+}
+
+@media (max-width: 991px) {
+    .col-lg-4 {
+        flex: 0 0 48%;
+    }
+    .col-lg-8 {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-lg-4 {
+        flex: 0 0 100%;
+    }
+    .col-lg-8 {
+        flex: 0 0 100%;
+    }
+    .card-title {
+        font-size: 2rem;
+    }
+    .card-text {
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+body, .card, .nav-link, a {
+    cursor: url('https://cdn.icons8.com/cursors/1/blue-pointer.cur'), pointer;
+}
+
+@keyframes cursor-hover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+body:hover, .card:hover, .nav-link:hover {
+    animation: cursor-hover 0.5s ease-in-out;
+}
+
+.main-content {
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 10px;
+}
